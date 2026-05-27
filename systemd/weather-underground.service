@@ -1,0 +1,10 @@
+[Unit]
+Description=Upload latest meteo reading to Weather Underground
+After=network-online.target rtl433.service
+
+[Service]
+Type=oneshot
+User=meteo-rtl
+Group=meteo-rtl
+EnvironmentFile=/etc/meteo-rtl-sdr/weather-underground.env
+ExecStart=/opt/meteo-rtl-sdr/bin/weather-underground-upload.py

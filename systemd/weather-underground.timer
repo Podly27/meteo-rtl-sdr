@@ -1,0 +1,11 @@
+[Unit]
+Description=Upload meteo reading to Weather Underground every 5 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Unit=weather-underground.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target

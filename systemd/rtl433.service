@@ -1,0 +1,16 @@
+[Unit]
+Description=RTL433 Weather Station Receiver
+After=network.target
+
+[Service]
+Type=simple
+User=meteo-rtl
+Group=meteo-rtl
+WorkingDirectory=/var/lib/meteo-rtl-sdr
+Environment=METEO_RTL433_CONFIG=/etc/meteo-rtl-sdr/rtl_433.env
+ExecStart=/opt/meteo-rtl-sdr/bin/meteo-rtl433-runner.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

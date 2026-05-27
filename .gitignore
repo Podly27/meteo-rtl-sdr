@@ -1,0 +1,8 @@
+diagnostics/
+__pycache__/
+*.pyc
+*.log
+*.jsonl
+weather-underground.env
+*.secret
+.DS_Store
