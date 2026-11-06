@@ -61,3 +61,7 @@ Never commit your real Weather Underground password/API key. Put secrets only in
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+## Integrace se serverem
+
+[Integrace se serverem a dohled aplikací](docs/server-integration.md) · aktualizováno 6. 11. 2026.
